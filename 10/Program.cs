@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _10
 {
-    class Program
+    public class Program
     {
         static void reverse(int[] list, int start, int length)
         {
@@ -54,7 +54,7 @@ namespace _10
             Console.WriteLine(list[0] * list[1]);
         }
 
-        static void test2(string text)
+        public static string test2(string text)
         {
             int[] list = new int[256];
             for (int i = 0; i < list.Length; i++)
@@ -87,6 +87,7 @@ namespace _10
             string hashString = hash.Aggregate("", (acc, v) => acc + v.ToString("X2")).ToLower();
 
             Console.WriteLine(hashString);
+            return hashString;
         }
 
         static void Main(string[] args)
